@@ -1,0 +1,29 @@
+.home-content {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  /* background-color: rgb(101, 205, 172); */
+}
+
+/* 
+.cover-container {
+  width: 40%;
+  height: 100%;
+  object-fit: none;
+  object-position: top;
+  filter: hue-rotate(180deg) sepia(.5)
+}
+ */
+
+ #canvas-cover {
+   /* margin-top: 150px; */
+   width: 100%;
+   height: 100%;
+   /* border: 1px solid black; */
+   background-image: url("../assets/cover_photos/Zarnie Cover Photo.jpeg");
+   background-position: top center;
+   background-size: 2000px;
+   background-color: rgba(150, 120, 0, 0.379);
+   background-blend-mode: color-dodge;
+ }

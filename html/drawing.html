@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/styles.css">
+  <script src="https://kit.fontawesome.com/678af3522a.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<div class="drawing-body">
+
+  <div class=outer-container>
+  
+    <div class="navbar-container">
+      <div class="navbar">
+        <div class="navbar-name-container">
+          <a href="about.html" class="">
+            <div class="navbar-name">
+              ZARNIE MORCOMBE
+            </div>
+          </a>
+        </div>
+  
+        <div class="navbar-content">
+          <a class = "zarnie-logo-container" href="index.html">
+            <img class = "zarnie-logo" src="../assets/logo/logo/Zarnie.png" alt="logo">
+          </a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="drawing-grid">
+      <div class="medium-header">
+        <div class="medium-navbar-header">
+          <div class="drawing-header">
+            <div>D</div>
+            <div>R</div>
+            <div>A</div>
+            <div>W</div>
+            <div>I</div>
+            <div>N</div>
+            <div>G</div>  
+            <div>S</div>  
+          </div>
+
+          <div class="filter-icon-container">
+            <i class="fas fa-grip-lines"></i>
+              <ul class="dropdown remove">
+                <div class="dropdown-menu-item" data-collection="All">All</div>
+              </ul>
+          </div>
+        </div>
+      </div>
+  
+      <!-- columns -->
+      <div class="drawing-grid-col drawing-grid-col--1"></div>
+      <div class="drawing-grid-col drawing-grid-col--2"></div>
+      <div class="drawing-grid-col drawing-grid-col--3"></div>
+      <!-- items -->
+  
+      <div class="drawing-grid-item"><img src="../assets/drawings/18.jpg" alt="drawing 1" class="myImages" data-index="0"></div>
+      <div class="drawing-grid-item"><img src="../assets/drawings/excusemoi.jpg" alt="drawing 2" class="myImages" data-index="1"></div>
+      <div class="drawing-grid-item"><img src="../assets/drawings/head-bird.jpg" alt="drawing 3" class="myImages" data-index="2"></div>
+      <div class="drawing-grid-item"><img src="../assets/drawings/newdepression.jpg" alt="drawing 4" class="myImages" data-index="3"></div>
+      <div class="drawing-grid-item"><img src="../assets/drawings/reptile-girl.jpg" alt="drawing 5" class="myImages" data-index="4"></div>
+      <div class="drawing-grid-item"><img src="../assets/drawings/runaway.jpg" alt="drawing 6" class="myImages" data-index="5"></div>
+      <div class="drawing-grid-item"><img src="../assets/drawings/3.jpg" alt="drawing 7" class="myImages" data-index="6"></div>
+      <div class="drawing-grid-item"><img src="../assets/drawings/12.jpg" alt="drawing 8" class="myImages" data-index="7"></div>
+      <div class="drawing-grid-item"><img src="../assets/drawings/17.jpg" alt="drawing 9" class="myImages" data-index="8"></div>
+      <div class="drawing-grid-item"><img src="../assets/drawings/9.jpg" alt="drawing 10" class="myImages" data-index="9"></div>
+      <div class="drawing-grid-item"><img src="../assets/drawings/5.jpg" alt="drawing 11" class="myImages" data-index="10"></div>
+      <div class="drawing-grid-item"><img src="../assets/drawings/7.jpg" alt="drawing 12" class="myImages" data-index="11"></div>
+  
+    </div>
+  
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- The Close Button -->
+      <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+      
+      <!-- Modal Content (The Image) -->
+      <div class="modal-image-container-container">
+        <div class="modal-image-container">
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+        </div>
+      </div>
+      
+      <!-- Modal Caption (Image Text) -->
+  
+      <a class="prev">&#10094;</a>
+      <a class="next">&#10095;</a>
+  
+    </div>
+  
+  </div>
+
+</div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"></script>
+  
+  <script src="https://unpkg.com/colcade@0/colcade.js"></script>
+  <script src="../javascript/modal.js"></script>
+  <script src="../javascript/navbar.js"></script>
+  <script src="../javascript/drawing.js"></script>
+  <script src="../javascript/filter.js"></script>
+
+</body>
+</html>

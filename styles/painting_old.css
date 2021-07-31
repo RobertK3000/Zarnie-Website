@@ -1,0 +1,203 @@
+/* PAINTING GRID 1  */
+
+
+.painting-grid-1 {
+	display: grid;
+  /* display: inline-grid; */
+  width: 100%;
+  /* grid-template-columns: 400px 50px 50px 400px; */
+  /* grid-template-columns: 400px 400px 400px; */
+  grid-template-columns: repeat(3, 40vmin);
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  /* background-color: aquamarine; */
+  margin-top:120px;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+  justify-items: center;
+  justify-content: center;
+}
+
+.painting-grid-1 .painting-grid-item {
+  display: flex;
+  align-items: flex-start;
+  /* border: 1px solid black; */
+}
+
+.painting-grid-1 .painting-grid-item:nth-child(n+4):nth-child(-n+6) {
+  align-items: flex-end;
+  /* border: 1px solid rgb(255, 0, 0); */
+}
+
+.painting-grid-1 .painting-grid-item img {
+  /* border: 1px solid black; */
+  width: 40vmin;
+  height: auto;
+  cursor: pointer;
+  object-fit: contain;
+}
+
+
+/* PAINTING GRID 2  */
+
+.painting-grid-2 {
+	display: grid;
+  /* display: inline-grid; */
+  width: 100%;
+  grid-template-columns: repeat(2, 50vmin);
+  grid-template-rows: repeat(2, 41vmin);
+  /* background-color: aquamarine; */
+  margin-top:120px;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+  justify-items: center;
+  justify-content: center;
+}
+
+.painting-grid-2 .painting-grid-item {
+  display: flex;
+  align-items: flex-start;
+  /* border: 1px solid black; */
+}
+
+.painting-grid-2 .painting-grid-item:nth-child(n+3):nth-child(-n+4){
+  display: flex;
+  align-items: flex-end;
+  /* border: 5px solid rgb(255, 0, 0); */
+  /* margin-bottom: 92px; */
+}
+
+.painting-grid-2 .painting-grid-item img {
+  /* border: 1px solid black; */
+  width: 50vmin;
+  height: auto;
+  cursor: pointer;
+  object-fit: contain;
+}
+
+
+/* PAINTING GRID 3  */
+
+
+.painting-grid-3 {
+	display: grid;
+  /* display: inline-grid; */
+  width: 100%;
+  /* grid-template-columns: 400px 50px 50px 400px; */
+  /* grid-template-columns: 400px 400px 400px; */
+  grid-template-columns: repeat(3, 40vmin);
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  /* background-color: aquamarine; */
+  margin-top:120px;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+  justify-items: center;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.painting-grid-3 .painting-grid-item img {
+  /* border: 1px solid black; */
+  width: auto;
+  height: 31vmin;
+  cursor: pointer;
+  object-fit: contain;
+}
+
+
+/* PAINTING GRID 4  */
+
+
+.painting-grid-4 {
+	display: grid;
+  /* display: inline-grid; */
+  width: 100%;
+  /* grid-template-columns: 400px 50px 50px 400px; */
+  /* grid-template-columns: 400px 400px 400px; */
+  grid-template-columns: repeat(2, 50vmin);
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  /* background-color: aquamarine; */
+  margin-top:120px;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+  justify-items: flex-end;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.painting-grid-4 .painting-grid-item img {
+  /* border: 1px solid black; */
+  width: auto;
+  height: 41.5vmin;
+  cursor: pointer;
+  object-fit: contain;
+}
+
+
+/* PAINTING GRID 5  */
+
+
+.painting-grid-5 {
+	display: grid;
+  /* display: inline-grid; */
+  width: 100%;
+  /* grid-template-columns: 400px 50px 50px 400px; */
+  /* grid-template-columns: 400px 400px 400px; */
+  grid-template-columns: repeat(3, 35vmin);
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  /* background-color: aquamarine; */
+  margin-top:120px;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+  justify-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.painting-grid-5-item-a {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.painting-grid-5-item-b {
+  justify-content: center;
+  display: flex;
+  align-items: flex-end;
+}
+
+.painting-grid-5-item-c {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+    /* border: 1px solid red; */
+}
+
+.painting-grid-5-item-d {
+  justify-self: flex-start;
+  display: flex;
+  align-items: flex-start;
+}
+
+
+.painting-grid-5 .painting-grid-item img {
+  /* border: 1px solid black; */
+  width: auto;
+  height: 36vmin;
+  cursor: pointer;
+  object-fit: contain;
+}
+
+.painting-grid-5 .painting-grid-item .painting-grid-5-long-img {
+  /* border: 1px solid black; */
+  width: auto;
+  height: 45vmin;
+  cursor: pointer;
+  object-fit: contain;
+}
+
+.painting-grid-5 .painting-grid-item .painting-grid-5-last-img {
+  /* border: 1px solid black; */
+  width: auto;
+  height: 33vmin;
+  cursor: pointer;
+  object-fit: contain;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/styles.css">
+  <script src="https://kit.fontawesome.com/678af3522a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="sculpture-body">
+  <div class=outer-container>
+
+    <div class="navbar-container">
+      <div class="navbar">
+        <div class="navbar-name-container">
+          <a href="about.html" class="">
+            <div class="navbar-name">
+              ZARNIE MORCOMBE
+            </div>
+          </a>
+        </div>
+  
+        <div class="navbar-content">
+          <a class = "zarnie-logo-container" href="index.html">
+            <img class = "zarnie-logo" src="../assets/logo/logo/Zarnie.png" alt="logo">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="sculpture-grid">
+
+      <div class="medium-header">
+        <div class="medium-navbar-header">
+          <div class="sculpture-header">
+            <div>O</div>
+            <div>B</div>
+            <div>J</div>
+            <div>E</div>
+            <div>C</div>
+            <div>T</div>
+            <div>S</div>  
+          </div>
+
+          <div class="filter-icon-container">
+            <i class="fas fa-grip-lines"></i>
+              <ul class="dropdown remove">
+                <div class="dropdown-menu-item" data-collection="All">All</div>
+                <div class="dropdown-menu-item" data-collection="Anaconda">Anaconda</div>
+                <div class="dropdown-menu-item" data-collection="Ashtray">Ashtray</div>
+                <div class="dropdown-menu-item" data-collection="LA">LA ice floor</div>
+                <div class="dropdown-menu-item" data-collection="Mobile">Mobile</div>
+                <div class="dropdown-menu-item" data-collection="Pillow">Pillow</div>
+                <div class="dropdown-menu-item" data-collection="Plastic">Plastic Loaves</div>
+                <div class="dropdown-menu-item" data-collection="PTV">PTV</div>
+                <div class="dropdown-menu-item" data-collection="Table">Table cloth</div>
+              </ul>
+          </div>
+        </div>
+      </div>
+      
+      <!-- columns -->
+      <div class="sculpture-grid-col sculpture-grid-col--1"></div>
+      <div class="sculpture-grid-col sculpture-grid-col--2"></div>
+      <div class="sculpture-grid-col sculpture-grid-col--3"></div>
+      <!-- items -->
+      <div class="sculpture-grid-item"><img src="../assets/sculpture/anaconda/AM_PlasticLoaves_171020-75.jpg" alt="sculpture 1" class="myImages" data-index="0" data-collection="Anaconda"></div>
+      <div class="sculpture-grid-item"><img src="../assets/sculpture/ash tray/SSPL 1157E.jpg" alt="sculpture 2" class="myImages" data-index="1" data-collection="Ashtray"></div>
+      <div class="sculpture-grid-item"><img src="../assets/sculpture/LA ice floor/IMG_7303.jpg" alt="sculpture 3" class="myImages" data-index="2" data-collection="LA"></div>
+      <div class="sculpture-grid-item"><img src="../assets/sculpture/mobile/IMG_7385.jpg" alt="sculpture 4" class="myImages" data-index="3" data-collection="Mobile"></div>
+      <div class="sculpture-grid-item"><img src="../assets/sculpture/pillow/IMG_4475.jpg" alt="sculpture 5" class="myImages" data-index="4" data-collection="Pillow"></div>
+      <div class="sculpture-grid-item"><img src="../assets/sculpture/plastic loaves/IMG_4584.jpg" alt="sculpture 6" class="myImages" data-index="5" data-collection="Plastic"></div>
+      <div class="sculpture-grid-item"><img src="../assets/sculpture/table cloth/SSPL 1315E.jpg" alt="sculpture 7" class="myImages" data-index="6" data-collection="Table"></div>
+      <div class="sculpture-grid-item"><img src="../assets/sculpture/PTV/IMG_7213.jpg" alt="sculpture 8" class="myImages" data-index="7" data-collection="PTV"></div>
+      <div class="sculpture-grid-item"><img src="../assets/sculpture/PTV/53196661_10157061015011100_9183008896279642112_o.jpg" alt="sculpture 9" class="myImages" data-index="8" data-collection="PTV"></div>
+      <div class="sculpture-grid-item"><img src="../assets/sculpture/PTV/53628928_10157061009836100_5922861919542181888_o.jpg" alt="sculpture 10" class="myImages" data-index="9" data-collection="PTV"></div>
+      <div class="sculpture-grid-item"><img src="../assets/sculpture/PTV/53722941_10157061010061100_2429915423165120512_o.jpg" alt="sculpture 11" class="myImages" data-index="10" data-collection="PTV"></div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- The Close Button -->
+      <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+      
+      <!-- Modal Content (The Image) -->
+      <div class="modal-image-container-container">
+        <div class="modal-image-container">
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+        </div>
+      </div>
+      
+      <!-- Modal Caption (Image Text) -->
+
+      <a class="prev">&#10094;</a>
+      <a class="next">&#10095;</a>
+
+    </div>
+
+  </div>
+</div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/colcade@0/colcade.js"></script>
+  <script src="../javascript/modal.js"></script>
+  <script src="../javascript/navbar.js"></script>
+  <script src="../javascript/sculpture.js"></script>
+  <script src="../javascript/filter.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+.about-body {
+  min-height: 100vh;
+  margin: 0px 0px 0px 0px;
+  padding-top: 0;
+  background-position: left 45vw top -50vh;
+  background-repeat: no-repeat;
+  background-size: 300vh;
+  background-image: url("../gimp/centre-sculpture-cutout1.png")
+}
+
+.about-text-main-container {
+  height: 100vh;
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-text-container {
+  /* background-color: mediumpurple; */
+  width:90%;
+  font-size: 20px;
+  padding-left: 10px;
+  font-family: 'Montserrat', sans-serif;  /* margin-left: calc((100vw - 1300px)/2) */
+}
+
+.fa-instagram {
+  font-size: 20px;
+  color: black;
+}
+
+@media ( max-width: 900px ) {
+  .about-text-container{
+    font-size: 3.5vmin;
+  }
+  .fa-instagram {
+    font-size: 3.5vmin;
+  }
+}

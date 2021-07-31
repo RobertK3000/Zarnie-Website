@@ -1,0 +1,135 @@
+@import "modal.css";
+@import "navbar.css";
+@import "home.css";
+@import "index.css";
+@import "painting.css";
+@import "drawing.css";
+@import "books.css";
+@import "fashion.css";
+@import "sculpture.css";
+@import "about.css";
+
+html {
+  height: 100%;
+  width: 100%;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+body {
+  margin: 0px 0px 0px 0px;
+  padding-top: 0;
+  /* background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #FAF9F6; */
+  /* background-image: url('../assets/fish.jpg'); */
+  /* background-image: url("../fish.jpeg"); */
+  /* url("https://images.unsplash.com/photo-1509624776920-0fac24a9dfda?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"); */
+}
+
+.outer-container {
+  /* height: 100%; */
+  overflow: hidden;
+  /* border: 10px solid red; */
+}
+
+.medium-header {
+  /* background-color: rgb(218, 117, 210); */
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  height: 20px;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  /* position: fixed; */
+}
+
+.medium-navbar-header {
+  width: 1300px;
+  display: flex;
+  justify-content: space-between;
+  /* background-color: salmon; */
+  position: relative;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.remove {
+  display: none;
+}
+
+.filter-icon-container {
+  position: relative;
+  margin-right: 150px;
+  width: 180px;
+  /* background-color: darkred; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.fa-grip-lines {
+  /* background-color: aqua; */
+  color: black;
+  font-size: 24px;
+  cursor: pointer;
+  text-shadow: 0px 1px 1px rgba(29, 29, 29, 0.4);
+}
+
+.dropdown {
+  /* background-color: #10c7ff; */
+  position: absolute;
+  padding-left: 0;
+  top: 2px;
+  /* left: 156px; */
+  /* backdrop-filter: invert(1); */
+  /* display: none; */
+}
+
+.dropdown div {
+  /* margin-left: auto; 
+  margin-right: 0; */
+  opacity: .9;
+  background-color: #f9f9f9;
+  color: black;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 10px 10px 10px 10px;
+  width: 120px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.dropdown div:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.dropdown div:nth-child(odd) {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.dropdown div:nth-child(even) {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  background-color: black;
+  color: white;
+}
+
+@media ( max-width: 1300px ) {
+  .medium-navbar-header {width: 900px; } /* show column 1 */
+  .filter-icon-container {margin-right: 120px; }
+}
+
+@media ( max-width: 900px ) {
+  .medium-navbar-header {width: 100%; } /* show column 1 */
+  .medium-header {margin-bottom: 4.5vw; }
+  .filter-icon-container {margin-right: 10vw; }
+  .fa-grip-lines {font-size: 2.75vw; }
+  .dropdown div {width: 15vw; font-size: 3vw}
+}
